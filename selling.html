@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selling a Car</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous">
+        <link href="Stylesheets/main.css" rel="stylesheet"/>
+        <link href="Stylesheets/sellingCarForm.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md sticky-top navbar-expand-lg navbar-light bg-light navbar-dark">
+				<div class="container">
+					<a class="navbar-brand pr-3 btn-roll" href="#home"><img src="logoLegit.png" alt="logo" width="200"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav ml-auto text-uppercase text-truncate">
+							<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="sales.html">Sales</a></li>
+							<li class="nav-item"><a class="nav-link" href="leasing.html">Leasing</a></li>
+                          <li class="nav-item"><a class="nav-link" href="cars.html">Makes and Models</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="selling.html">Selling a Car</a></li>
+                             <li class="nav-item"><a class="nav-link" href="#">Body Shops <img src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png" style="height: 1vw;">
+                                 <ul class="sub">
+                                    <li><a href="bodyshops.html">Find a Shop</a></li>
+                                    <li><a href="bodyshops.html#rev">Shop Review</a></li>
+                                    <li><a href="bodyshops.html#parts">Find Parts</a></li>
+                                </ul>
+                            </a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+<article>
+    <h1> Looking to sell your car? <br>
+    Fill out the form below to submit a car to add to our inventory.</h1><br>
+       <h4 style> Here is how it works:</h4>
+      <p> When someone approaches looking to buy a car, we look through our inventory of cars.
+       If your car satisfies a buyers needs, we take care of all the negotiations and discussions.
+       You walk out with the paycheck and we walk out with the paperwork.</p>
+    <h3>Its a win-win, we do all the legwork and you get all the pay!</h3>
+	<form id="car-form" >
+		<label for="seller-name">Name of seller:</label>
+		<input type="text" id="seller-name" name="seller-name" required><br>
+		<span id="seller-name-error" style="color: red;"></span><br>
+
+		<label for="make">Make:</label>
+        <select id="make" name="make" required><br>
+            <option disabled selected>Choose a car company</option>
+             <optgroup label="Mainstream Cars">
+                 <option>Buick</option>
+                 <option>Chevrolet</option>
+                 <option>Chrysler</option>
+                 <option>Dodge</option>
+                 <option>Fiat</option>
+                 <option>Ford</option>
+                 <option>GMC</option>
+                 <option>Genesis</option>
+                 <option>Honda</option>
+                 <option>Hyundai</option>
+                 <option>Jeep</option>
+                 <option>Kia</option>
+                 <option>Mazda</option>
+                 <option>Mitsubishi</option>
+                 <option>Nissan</option>
+                 <option>Saab</option>
+                 <option>Subaru</option>
+                 <option>Toyota</option>
+                 <option>Volkswagen</option>
+             </optgroup>
+            <optgroup label="Luxury Cars">
+                    <option>Acura</option>
+                    <option>Alfa Romeo</option>
+                    <option>Audi</option>
+                    <option>Bentley</option>
+                    <option>Bugatti</option>
+                    <option>Cadillac</option>
+                    <option>Infiniti</option>
+                    <option>Jaguar</option>
+                    <option>Land Rover</option>
+                    <option>Lexus</option>
+                    <option>Lincoln</option>
+                    <option>Mercedes</option>
+                    <option>Rolls-Royce</option>
+                    <option>Tesla</option>
+                    <option>Volvo</option>
+                </optgroup>
+                <optgroup label="Sports Cars">
+                    <option>Aston Martin</option>
+                    <option>Ferrari</option>
+                    <option>Lamborghini</option>
+                    <option>Maserati</option>
+                    <option>McLaren</option>
+                    <option>Pagani</option>
+                    <option>Porsche</option>
+                </optgroup>
+            </select>
+
+</select>
+
+		<label for="model">Model:</label>
+		<input type="text" id="model" name="model" required><br>
+
+		<label for="year">Year:</label>
+		<input type="number" id="year" name="year" min="1980" max="2030" required><br>
+
+		<label for="condition">Condition:</label>
+		<select id="condition" name="condition" required>
+			<option value="">Select condition</option>
+			<option value="Excellent">Excellent</option>
+			<option value="Good">Good</option>
+			<option value="Fair">Fair</option>
+			<option value="Poor">Poor</option>
+		</select><br>
+
+		<label for="price">Price:</label>
+		<input type="number" id="price" name="price" min="0" step="500" required><br>
+		<span id="price-error" style="color: red;"></span><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+		<span id="email-error" style="color: red;"></span><br>
+
+        <label for="datepicker">Car Inspection:</label>
+        <p><em>(An associate will contact you closer for time and address of the at home inspection)</em></p>
+        <input type="text" id="datepicker">
+
+		<button type="submit" id="form_button">Submit</button>
+	</form>
+
+	<script>
+        $(function() {
+          $('li:last-child').hover(
+              function(){
+                  $('ul.sub,this').slideDown(500);
+              },
+              function(){
+                  $('ul.sub', this).slideUp(300);
+              }
+          )
+      });
+
+	document.getElementById("car-form").addEventListener("submit", function(event) {
+		event.preventDefault();
+		var sellerName = document.getElementById("seller-name").value;
+		var make = document.getElementById("make").value;
+		var model = document.getElementById("model").value;
+		var year = document.getElementById("year").value;
+		var condition = document.getElementById("condition").value;
+		var price = document.getElementById("price").value;
+		var email = document.getElementById("email").value;
+
+		// Validate seller name (text only)
+		var sellerNameRegex = /^[a-zA-Z ]+$/;
+		if (!sellerNameRegex.test(sellerName)) {
+			document.getElementById("seller-name-error").innerHTML = "Please enter a valid name (letters and spaces only)";
+			return;
+		}
+
+		// Validate price (numeric only)
+		var priceRegex = /^[0-9]+(\.[0-9]{1,2})?$/;
+		if (!priceRegex.test(price)) {
+			document.getElementById("price-error").innerHTML = "Please enter a valid price (numbers and decimal point only)";
+			return;
+		}
+
+		// Validate email
+		var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		if (!emailRegex.test(email)) {
+			document.getElementById("email-error").innerHTML = "Please enter a valid email address";
+			return;
+		}
+
+		// Calculate tax (10% for new cars, 5% for used cars)
+		var taxRate = (year >= new Date().getFullYear() - 1) ? 0.1 : 0.05;
+		var tax = price * taxRate;
+
+		// Display results
+		var message = "Thank you for submitting your car:\n\nMake: " + make + "\nModel: " + model + "\nYear: " + year + "\nCondition: " + condition + "\nPrice: $" + price + "\nTax: $" + tax.toFixed(2) + "\n\nWe will contact you at " + email + " soon.";
+		alert(message);
+	});
+
+	document.getElementById("seller-name").addEventListener("input", function() {
+		document.getElementById("seller-name-error").innerHTML = "";
+	});
+
+	document.getElementById("price").addEventListener("input", function() {
+		document.getElementById("price-error").innerHTML = "";
+	});
+
+	document.getElementById("email").addEventListener("input", function() {
+		document.getElementById("email-error").innerHTML = "";
+	});
+
+    //for datepicker
+    $(document).ready(function(){
+      var currentDate = new Date();
+      $("#datepicker").datepicker({
+        minDate: currentDate,
+        maxDate: "+7Y",
+        dateFormat: "mm/dd/yy",
+        changeMonth: true,
+        changeYear: true
+      });
+    });
+    </script>
+
+</article>
+
+<footer>
+    Thank you for using <strong>Easy Street!</strong> </br>
+    <em>Happy Driving!</em>
+</footer>
+</body>
+</html>

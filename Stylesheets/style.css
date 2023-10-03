@@ -1,0 +1,92 @@
+/*Styling the home page*/
+
+
+
+.navbar {
+    background-image:none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background-color: black;
+}
+
+.h1 {
+    font-size: 10vw;
+    color: white;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 8vw;
+    font-family: "Segoe UI Symbol";
+    padding-top: .5vh;
+}
+
+.homePage h3 {
+    color: lightgrey;
+    text-align: center;
+    font-family: monospace;
+    font-size: 3vw;
+    padding-top: 10vw;
+}
+
+/*Styling the grey block of text*/
+.homePage p {
+    background-image: url("Images/grey_background.png") ;
+    width: 70vw;
+    margin-left: 15vw;
+    height: 15vw;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    margin-top: 7vw;
+}
+
+/*Styling the "Information coming soon" letters*/
+.card-body {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.row {
+    margin-top: 10vw;
+}
+.homePage #form h2 {
+    color: black;
+    font-size: 1.5vw;
+    font-family: monospace;
+    text-align: center;
+    background-color: lightgrey;
+
+}
+
+#form {
+    border-collapse: collapse;
+    text-align: center;
+    background-color: dimgrey;
+    margin-right: 5vw;
+    height: 45vw;
+    font-size: 1vw;
+
+}
+
+#form input {
+    width: 10vw;
+}
+
+/*
+.homePage label {
+    padding: 1vw;
+}
+*/
+footer {
+    font-size: 1vw;
+    font-family: "Segoe UI Symbol";
+    text-align: center;
+    margin-top: 5vw;
+    color: white;
+
+}

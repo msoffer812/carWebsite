@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buying a Car</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous">
+        <link href="Stylesheets/main.css" rel="stylesheet"/>
+	    <link href="Stylesheets/sales.css" rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-expand-md sticky-top navbar-expand-lg navbar-light bg-light navbar-dark">
+				<div class="container">
+					<a class="navbar-brand pr-3 btn-roll" href="#home"><img src="logoLegit.png" alt="logo" width="200"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav ml-auto text-uppercase text-truncate">
+							<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link active" href="sales.html">Sales</a></li>
+							<li class="nav-item"><a class="nav-link" href="leasing.html">Leasing</a></li>
+                          <li class="nav-item"><a class="nav-link" href="cars.html">Makes and Models</a></li>
+                            <li class="nav-item"><a class="nav-link" href="selling.html">Selling a Car</a></li>
+                             <li class="nav-item"><a class="nav-link" href="#">Body Shops <img src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png" style="height: 1vw;">
+                                 <ul class="sub">
+                                    <li><a href="bodyshops.html">Find a Shop</a></li>
+                                    <li><a href="bodyshops.html#rev">Shop Review</a></li>
+                                    <li><a href="bodyshops.html#parts">Find Parts</a></li>
+                                </ul>
+                            </a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+<script>
+	$(function() {
+           $('li:last-child').hover(
+              function(){
+                  $('ul.sub,this').slideDown(500);
+              },
+              function(){
+                  $('ul.sub', this).slideUp(300);
+              }
+          )
+      });
+	$(document).ready(function(){
+			var url = "http://api.flickr.com/services/feeds/photos_public.gne?" +
+			          "format=json&jsoncallback=?&tags=car";
+
+			$.getJSON(url, function(data){
+				var html = "";
+				$.each(data.items, function(i, item){
+					html += "<h2>" + item.title + "</h2>";
+					html += "<p>" + item.date_taken + "</p>";
+					html += item.description;
+				});
+				$("#photos").html(html);
+			});
+        });
+    </script>
+<h1>See Our Posted Sales!</h1>
+<div id="photos"></div>
+<footer>
+    Thank you for using <strong>Easy Street!</strong> </br>
+    <em>Happy Driving!</em>
+</footer>
+</body>
+</html>

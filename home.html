@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Street</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+        <script src="main.js" defer></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous">
+        <link rel="stylesheet" href="Stylesheets/style.css" />
+        <link href="Stylesheets/main.css" rel="stylesheet"/>
+        <link href="Stylesheets/homeForm.css" rel="stylesheet" />
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md sticky-top navbar-expand-lg navbar-light navbar-dark" id="main">
+				<div class="container">
+					<a class="navbar-brand pr-3 btn-roll" href="#home"><img src="logoLegit.png" alt="logo" width="200"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav ml-auto text-uppercase text-truncate">
+							<li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="sales.html">Sales</a></li>
+							<li class="nav-item"><a class="nav-link" href="leasing.html">Leasing</a></li>
+                          <li class="nav-item"><a class="nav-link" href="cars.html">Makes and Models</a></li>
+                            <li class="nav-item"><a class="nav-link" href="selling.html">Selling a Car</a></li>
+                             <li class="nav-item"><a class="nav-link" href="#">Body Shops <img src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png" style="height: 1vw;">
+                                 <ul class="sub">
+                                    <li><a href="bodyshops.html">Find a Shop</a></li>
+                                    <li><a href="bodyshops.html#rev">Shop Review</a></li>
+                                    <li><a href="bodyshops.html#parts">Find Parts</a></li>
+                                </ul>
+                            </a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+<div class = "bg-img">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="Images/new_car.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="Images/used_car.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="Images/body_shop.jpg" alt="Third slide">
+    </div>
+  </div>
+</div>
+</div>
+<div class="homePage">
+<article>
+    <h2><strong>Welcome to Easy Street</strong></h2>
+  <h3><em>We're here to make any car related business as simple and easy as possible</em></h3>
+<p>
+  Need advice on different makes or models? </br>
+  Getting stressed on who, what, when to buy, lease, or sell a car? </br>
+  Look no further! Get ideas, advice, and help for all your auto needs right here!
+  Information for local repairshops, the benefits of buying or leasing and so forth.
+  It's all just a click away!
+</p>
+</article>
+<div class="card">
+  <div class="card-body">
+    Information regarding EV coming soon!
+  </div>
+</div>
+    <div class="container">
+       <form id="form" action="survey.html" method="post">
+
+    <fieldset>
+        <div id="form_title">
+            <h2>Fill out the form below to tell us about your Easy Street Experience!</h2>
+        </div>
+    <fieldset id="info">
+
+        <div class="formRow">
+            <label for="name">Name*</label>
+            <input name="custName" id="name" type="text" placeholder="first and last name"/>
+        </div>
+
+        <div class="formRow">
+            <label for="hear">How did you hear of us?</label>
+            <input name="how_heard" id="hear" type="text" list="options_heard"/>
+            <datalist id="options_heard">
+               <option value="Friend">
+               <option value="Family">
+               <option value="Social Media">
+               <option value="Work">
+               <option value="Advertisement">
+              m<option value="Other">
+            </datalist>
+        </div>
+        <div class="formRow">
+               <label for="rangeBox">Rate your <em>Easy Street</em> experience so far<br />
+               (0=poor; 10=great)</label>
+               0
+               <input name="serviceRate" id="rangeBox" type="range" value="5" step="1" min="0" max="10"/>
+               10
+        </div>
+
+        <label for="commBox">Tell us more!</label>
+            <textarea name="custExp" id="commBox"></textarea>
+
+    </fieldset>
+        <label for="mailCB">Add me to your mailing list for great inside tips and tricks everything car related!</label>
+        <input name="mailMe" id="MailCB" value="yes" type="checkbox"/>
+
+        <div id="buttons">
+            <input type="submit" value="Submit" />
+        </div>
+    </fieldset>
+           </form>
+         </div>
+    </div>
+
+    <footer>
+    Thank you for using <strong>Easy Street!</strong> </br>
+    <em>Happy Driving!</em>
+</footer>
+    </div>
+</div>
+<script>
+    $(function() {
+           $('li:last-child').hover(
+              function(){
+                  $('ul.sub,this').slideDown(500);
+              },
+              function(){
+                  $('ul.sub', this).slideUp(300);
+              }
+          )
+      });
+</script>
+</body>
+</html>

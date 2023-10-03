@@ -1,0 +1,120 @@
+/*main stylesheet*/
+
+@charset "UTF-8";
+/*Sets size of slide show*/
+.bg-img, .backgroundTopper{
+    height: 2vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.navbar{
+    background-image: url("../Images/motorway.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Sets the top image on the nav bar on the pages that aren't home*/
+/*.backgroundTopper {
+   height: 10vw;
+}*/
+
+/*Establishes room for the body without picture*/
+body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, p{
+    text-align: center;
+}
+
+/*Styling the text on the slideshow*/
+  .homePage h2 {
+    color: white;
+    text-align: center;
+    font-size: 8vw;
+    font-family: "Segoe UI Symbol";
+    padding-top: .5vh;
+}
+
+.homePage h3 {
+    color: lightgrey;
+    text-align: center;
+    font-family: monospace;
+    font-size: 3vw;
+    padding-top: 10vw;
+}
+
+/*Styling the grey block of text*/
+.homePage p {
+    background-image: url("../Images/grey_background.png") ;
+    width: 70vw;
+    margin-left: 15vw;
+    height: 15vw;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    margin-top: 7vw;
+}
+
+/*Styling the "Information coming soon" letters*/
+.card-body {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.row {
+    margin-top: 10vw;
+}
+
+
+/*
+.homePage label {
+    padding: 1vw;
+}
+*/
+footer {
+    font-size: 1vw;
+    font-family: "Segoe UI Symbol";
+    text-align: center;
+    margin-top: 5vw;
+    color: black;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+
+}
+
+h2{
+    font-size: 2vw;
+}
+
+nav ul.sub {
+    position:absolute;
+    display:none;
+    background-color: lightgray;
+    list-style-type: none;
+
+}
+nav ul.sub li{
+    text-align: center;
+    color: white;
+}
+nav ul.sub li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul.sub li:hover{
+    background-color: whitesmoke;
+}
+nav ul.sub li a:hover{
+    color:dimgrey;
+}

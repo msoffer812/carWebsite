@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="/path/to/cdn/jquery.slim.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous">
+        <link href="Stylesheets/main.css" rel="stylesheet"/>
+        <link href="Stylesheets/about.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md sticky-top navbar-expand-lg navbar-light bg-light navbar-dark">
+				<div class="container">
+					<a class="navbar-brand pr-3 btn-roll" href="#home"><img src="logoLegit.png" alt="logo" width="200"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarToggler">
+						<ul class="navbar-nav ml-auto text-uppercase text-truncate">
+							<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="sales.html">Sales</a></li>
+							<li class="nav-item"><a class="nav-link" href="leasing.html">Leasing</a></li>
+                          <li class="nav-item"><a class="nav-link" href="cars.html">Makes and Models</a></li>
+                            <li class="nav-item"><a class="nav-link" href="selling.html">Selling a Car</a></li>
+                             <li class="nav-item"><a class="nav-link" href="#">Body Shops <img src="https://www.pngkit.com/png/full/273-2739733_white-drop-down-arrow.png" style="height: 1vw;">
+                                 <ul class="sub">
+                                    <li><a href="bodyshops.html">Find a Shop</a></li>
+                                    <li><a href="bodyshops.html#rev">Shop Review</a></li>
+                                    <li><a href="bodyshops.html#parts">Find Parts</a></li>
+                                </ul>
+                            </a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+
+  <script>
+    $(function() {
+           $('li:last-child').hover(
+              function(){
+                  $('ul.sub,this').slideDown(500);
+              },
+              function(){
+                  $('ul.sub', this).slideUp(300);
+              }
+          )
+      });
+
+    $(document).ready(function(){
+      $(".accordion").click(function(){
+        $(this).toggleClass("active");
+        $(this).next().slideToggle("fast");
+      });
+    });
+  </script>
+
+<article>
+  <h1>About Us</h1>
+
+  <button class="accordion">Our Mission</button>
+  <div class="panel">
+    <p>Our mission is to make anything car related as easy as possible. <br>
+    After personally experiencing the confusing world of cars, we sought out to create a zone that helps others. <br>
+      We are here to service YOU. <br>
+      We are confidant that with are help, buying, selling, leasing, and repairs will no longer be a hassle, but rather: <br>
+      <em>Easy Street!</em></p>
+  </div>
+
+  <button class="accordion">Who We Are</button>
+  <div class="panel">
+    <p>Hi! <br>
+    Easy Street was created by us, Meira and Rina. <br>
+      We are 2 Touro Students who were tasked with a job. <br>
+      In our class MCOO 275 we had to make a website. <br>
+      So we did. <br>
+      And it's to service you. <br>
+      Why you ask? <br>
+      Because when your working hard on something, you want the satisfication to be shared with others.<br>
+      <strong>All the Best!</strong> <br>
+      <em>--Meira and Rina</em>
+    </p>
+  </div>
+
+  <button class="accordion">Buying vs Leasing</button>
+  <div class="panel">
+    <p><em>Here's a quick summary of buying vs leasing:</em></p>
+    <p><strong>Buying a Car:</strong> <br>
+
+      Buying a car can be a big decision, and there are several factors to consider.
+      Some pros of owning a car include increased mobility, convenience, and the potential for savings over public transportation in the long term.
+      However, there are also cons to consider, such as the upfront costs of purchasing a vehicle, ongoing expenses like fuel and maintenance, and the potential
+      for unexpected repairs.
+      To buy a car, the first step is to determine your budget and research different makes and models that fit your needs and preferences.
+      Once you have found a car you are interested in, it's important to inspect it thoroughly and take it for a test drive to ensure it is in good condition.
+      Negotiating the price with the seller or dealership is also an important step in the process.
+      Other important considerations when buying a car include obtaining financing if necessary, purchasing insurance,
+      registering the vehicle with the DMV, and keeping up with regular maintenance and inspections to keep the car in good condition.
+    </p>
+    <p><strong>Leasing a Car:</strong><br>
+
+      Leasing a car involves renting a vehicle for a specified period of time, typically a few years, in exchange for monthly payments.
+      Some pros of leasing a car include lower upfront costs compared to buying, lower monthly payments, and the ability to drive a new car every few years.
+      However, there are also cons to consider, such as mileage restrictions, potential penalties for excess wear and tear,
+      and the fact that you will not own the car at the end of the lease term.
+      To lease a car, the first step is to research different makes and models to find one that meets your needs and preferences.
+      You will then negotiate the lease terms with the dealership, including the length of the lease, the mileage limit, and the monthly payments.
+      Once you have signed the lease agreement, you will make monthly payments to the dealership for the duration of the lease term.
+      Other important considerations when leasing a car include obtaining insurance, keeping up with regular maintenance and inspections,
+      and being aware of any potential fees or penalties for exceeding the mileage limit or causing excess wear and tear to the vehicle.
+      At the end of the lease term, you will return the car to the dealership and have the option to lease a new car or purchase the leased car at a predetermined price.
+    </p>
+  </div>
+
+  <button class="accordion">Autobody Shops Near By</button>
+  <div class="panel">
+    <p>Here are some autobody shops near our location:</p>
+    <p>MS MOTORS:
+    MS Motors is an autobody shop located on Hillside Ave in Queens NY. <br>
+    Run by Nathan and CJ Lederer, MS motors is there to service YOU. <br>
+    With 5-Star review and excellent service, it is no wonder that MS is the place to have all your car repairs.<br>
+      Checkout customer reviews and directions of MS Motors on our autobody shops page. (<a href="bodyshops.html">Body Shops</a>) <br>
+    Address: 143-17 Hillside Avenue, Queens, NY 11435 <br>
+    Phone: <a href="tel:718-523-4424">(718) 523-4424</a> </p>
+  </div>
+
+  <button class="accordion">Contact Us</button>
+  <div class="panel">
+    <p>Feel free to contact us through email or phone.<br>
+    Email: <a href=mailto:"help@easystreet.com">help@easystreet.com</a> <br>
+    Tel: <a href=tel:"123-456-7890"> (123) 456-7890</a> <br>
+    Check us out on <em>Instagram</em>: @EasyStreet</p>
+  </div>
+
+</article>
+<footer>
+    Thank you for using <strong>Easy Street!</strong> </br>
+    <em>Happy Driving!</em>
+</footer>
+</body>
+</html>
